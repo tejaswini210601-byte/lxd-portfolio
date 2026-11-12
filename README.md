@@ -9,7 +9,7 @@ My Learning Experience Designer portfolio, built **as a short course**. Visitors
 | File | What it does |
 |---|---|
 | `index.html` | The content: every module, case study and quiz question |
-| `style.css` | The look: colours, fonts, layout, dark mode, mobile layout |
+| `style.css` | The look: colours, fonts, layout, mobile layout |
 | `script.js` | The interactions: cursor-following portrait, progress bar, flip cards, process steps, filters, lesson bar, quiz + confetti |
 | `assets/` | My portrait frames (64 directions + centre), fonts (Fredoka, Nunito, Dancing Script), tool logos |
 
@@ -31,3 +31,5 @@ My Learning Experience Designer portfolio, built **as a short course**. Visitors
 - **Change a quiz question?** Edit the question in `index.html` and the right answer in the `answers` list at the top of section 6 in `script.js`.
 
 Commit the change on GitHub and the live site updates in a minute or two.
+
+> **Tip:** after a big change to `style.css` or `script.js`, bump the `?v=2` at the end of their links in `index.html` (to `?v=3`, and so on). That makes visitors' browsers load the new version instead of an old saved copy.
