@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tejaswini S | Learning Experience Designer</title>
+<meta name="description" content="Tejaswini S, Learning Experience Designer. This portfolio is a short course: take it to see how I design learning.">
+<meta property="og:title" content="Tejaswini S | Learning Experience Designer">
+<meta property="og:description" content="A portfolio you take like a course. 6 modules, about 8 minutes, certificate at the end.">
+<meta name="theme-color" content="#14213d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP BAR: course title + progress (like an LMS player) ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#welcome"><span class="brand-dot">T</span><span class="brand-text">Course: <strong>Meet Tejaswini</strong></span></a>
+    <div class="progress" aria-label="Course progress">
+      <div class="track"><div class="fill" id="progress-fill"></div></div>
+      <span class="pct" id="progress-pct">0%</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR: module list, ticks off as you scroll ============ -->
+  <nav class="modules" aria-label="Course modules">
+    <p class="mono">Modules</p>
+    <ol id="module-list">
+      <li><a href="#welcome" data-mod="welcome"><span class="tick"></span>Welcome</a></li>
+      <li><a href="#about" data-mod="about"><span class="tick"></span>Meet the designer</a></li>
+      <li><a href="#process" data-mod="process"><span class="tick"></span>How I design</a></li>
+      <li><a href="#work" data-mod="work"><span class="tick"></span>Case studies</a></li>
+      <li><a href="#lesson" data-mod="lesson"><span class="tick"></span>Anatomy of a lesson</a></li>
+      <li><a href="#skills" data-mod="skills"><span class="tick"></span>Skills map</a></li>
+      <li><a href="#check" data-mod="check"><span class="tick"></span>Knowledge check</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <!-- ============ MODULE 0: WELCOME ============ -->
+    <section id="welcome" class="module hero" data-mod="welcome">
+      <p class="mono eyebrow">Learning Experience Designer · Joensuu, Finland</p>
+      <h1>Most portfolios <span class="hl">tell</span> you.<br>This one <span class="hl hl-teal">teaches</span> you.</h1>
+      <p class="lede">I'm Tejaswini. I design learning for coding, robotics and maths. So instead of a list of projects, I made my portfolio the way I'd make any learning experience: with objectives, practice, and a check at the end.</p>
+
+      <div class="course-card">
+        <div class="course-meta">
+          <div><span class="mono">Duration</span><strong>≈ 8 min</strong></div>
+          <div><span class="mono">Level</span><strong>Busy recruiters</strong></div>
+          <div><span class="mono">Format</span><strong>Self-paced</strong></div>
+          <div><span class="mono">Reward</span><strong>Certificate</strong></div>
+        </div>
+        <div class="objectives">
+          <p class="mono">Learning objectives · by the end you will be able to</p>
+          <ol>
+            <li><strong>Describe</strong> how I turn a learning problem into a design.</li>
+            <li><strong>Evaluate</strong> two delivered projects and five in progress.</li>
+            <li><strong>Decide</strong> whether we should talk.</li>
+          </ol>
+        </div>
+        <a class="btn" href="#about">Start course →</a>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 1: ABOUT ============ -->
+    <section id="about" class="module" data-mod="about">
+      <p class="mono eyebrow">Module 1</p>
+      <h2>Meet the designer</h2>
+      <p class="body-text">For six years I taught children aged 5–17, in school classrooms, workshops and live online classes with learners in the US. Every week I saw which lessons landed and which didn't. Now, alongside an MSc in Information Technology at the University of Eastern Finland, I design those lessons on purpose.</p>
+
+      <div class="stats">
+        <div class="stat"><strong>500+</strong><span>learners taught</span></div>
+        <div class="stat"><strong>6+</strong><span>years in the classroom</span></div>
+        <div class="stat"><strong>100+</strong><span>live online sessions</span></div>
+        <div class="stat"><strong>5–17</strong><span>ages designed for</span></div>
+      </div>
+
+      <h3 class="sub">What teaching taught the designer <span class="hint">Tap a card to flip it</span></h3>
+      <div class="flips">
+        <button class="flip" id="flip-1" aria-pressed="false">
+          <span class="face front"><span class="mono">In class I saw…</span>Kids switch off during long explanations, then light up the moment they build something.</span>
+          <span class="face back"><span class="mono">So as a designer I…</span>Keep concept time to 10 minutes and end every lesson with something the learner made.</span>
+        </button>
+        <button class="flip" id="flip-2" aria-pressed="false">
+          <span class="face front"><span class="mono">In class I saw…</span>One class could hold a total beginner and a child ready for loops and logic.</span>
+          <span class="face back"><span class="mono">So as a designer I…</span>Build two tiered challenges into every lesson, so nobody waits and nobody drowns.</span>
+        </button>
+        <button class="flip" id="flip-3" aria-pressed="false">
+          <span class="face front"><span class="mono">In class I saw…</span>Learners forgot last week's concept unless we brought it back.</span>
+          <span class="face back"><span class="mono">So as a designer I…</span>Open each lesson with a 5-minute recall activity, and use spaced recall across the course.</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 2: PROCESS ============ -->
+    <section id="process" class="module" data-mod="process">
+      <p class="mono eyebrow">Module 2</p>
+      <h2>How I design</h2>
+      <p class="body-text">My process follows the shape of ADDIE and backward design, but every step is grounded in something I've actually done. Pick a step.</p>
+
+      <div class="steps" role="tablist" aria-label="Design process steps">
+        <button role="tab" id="step-1" aria-selected="true" data-step="0"><span class="num">1</span>Know the learners</button>
+        <button role="tab" id="step-2" aria-selected="false" data-step="1"><span class="num">2</span>Write objectives</button>
+        <button role="tab" id="step-3" aria-selected="false" data-step="2"><span class="num">3</span>Design the experience</button>
+        <button role="tab" id="step-4" aria-selected="false" data-step="3"><span class="num">4</span>Build</button>
+        <button role="tab" id="step-5" aria-selected="false" data-step="4"><span class="num">5</span>Test & improve</button>
+      </div>
+      <div class="step-panel" role="tabpanel" aria-live="polite">
+        <div><p class="mono">How I do it</p><p id="step-how">Talk to learners, parents and teachers. Find out what they already know, where they get stuck, and what success looks like for them.</p></div>
+        <div><p class="mono">From my work</p><p id="step-ex">Before designing my hands-free Scratch research, I studied how children with motor disabilities currently use (or can't use) block coding.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 3: CASE STUDIES ============ -->
+    <section id="work" class="module" data-mod="work">
+      <p class="mono eyebrow">Module 3</p>
+      <h2>Case studies</h2>
+      <p class="body-text">Each project is a storyboard frame: the learners, the objective, my design moves and the artefacts. The labels are honest — <span class="chip s-done">Delivered</span> <span class="chip s-prog">In progress</span> <span class="chip s-plan">Planned</span></p>
+
+      <div class="filters" role="group" aria-label="Filter case studies">
+        <button id="f-all" aria-pressed="true" data-f="all">All</button>
+        <button id="f-done" aria-pressed="false" data-f="done">Delivered</button>
+        <button id="f-prog" aria-pressed="false" data-f="prog">In progress</button>
+        <button id="f-plan" aria-pressed="false" data-f="plan">Planned</button>
+      </div>
+
+      <div class="frames">
+
+        <article class="frame" data-s="done">
+          <div class="frame-head"><span class="frame-no mono">Frame 01</span><span class="chip s-done">Delivered · revised</span></div>
+          <h3>City Traffic Signal</h3>
+          <p class="meta">K-12 coding lesson · Grades 4–8, mixed ability · Curriculum Developer application</p>
+          <dl>
+            <div><dt>Learners & problem</dt><dd>A mixed class: some have never coded, others are ready for timing and logic. One lesson has to stretch both.</dd></div>
+            <div><dt>Objective</dt><dd>Learners will <b>build</b> a working traffic-light sequence and <b>explain</b> how timing and conditions control it.</dd></div>
+            <div><dt>Design moves</dt><dd>A real-world anchor every child recognises · tiered challenges · deck revised after reviewer feedback.</dd></div>
+            <div><dt>Artefacts</dt><dd class="tags"><span>Lesson deck</span><span>Speaker notes</span><span>Before / after</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="done">
+          <div class="frame-head"><span class="frame-no mono">Frame 02</span><span class="chip s-done">Delivered</span></div>
+          <h3>K-12 Tech Certification Pathway</h3>
+          <p class="meta">Curriculum architecture · high-school learners</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Coding courses with no clear route from first lessons to recognised industry certificates.</dd></div>
+            <div><dt>Structure</dt><dd>Five domains: Technology & AI · Programming · Data & Digital · Cybersecurity · Design & Creativity.</dd></div>
+            <div><dt>Design moves</dt><dd>Foundational → specialised → industry cert → portfolio. Every stage ends in evidence the learner keeps.</dd></div>
+            <div><dt>Artefacts</dt><dd class="tags"><span>Framework</span><span>Pathway map</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="prog">
+          <div class="frame-head"><span class="frame-no mono">Frame 03</span><span class="chip s-prog">In progress</span></div>
+          <h3>Scratch Level 1 Curriculum</h3>
+          <p class="meta">Curriculum Developer · live online coding programme · ages 7–12</p>
+          <dl>
+            <div><dt>Learners</dt><dd>Children new to coding in live online classes, with parents who want to see progress.</dd></div>
+            <div><dt>Framework</dt><dd>Inquiry-based (inspired by IB PYP/MYP principles), four age stages, 48 lessons per level.</dd></div>
+            <div><dt>Design moves</dt><dd>A fixed 60-minute lesson rhythm — see Module 4 — with concept tests, recall tests and home tasks.</dd></div>
+            <div><dt>Artefacts</dt><dd class="tags"><span>Lesson decks</span><span>Assessments</span><span>Home tasks</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="prog">
+          <div class="frame-head"><span class="frame-no mono">Frame 04</span><span class="chip s-prog">In progress · MSc thesis</span></div>
+          <h3>Hands-Free Scratch</h3>
+          <p class="meta">Accessibility research · University of Eastern Finland</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Block coding needs a mouse and fine motor control, which shuts out many children with motor disabilities.</dd></div>
+            <div><dt>Approach</dt><dd>Program Scratch with eye gaze and voice instead of drag-and-drop.</dd></div>
+            <div><dt>LXD skills</dt><dd>Inclusive design · user research · usability evaluation.</dd></div>
+            <div><dt>Artefacts</dt><dd class="tags"><a href="https://github.com/tejaswini210601-byte/gaze-voice-scratch" target="_blank" rel="noopener">GitHub repo ↗</a><span>Proposal</span></dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="prog">
+          <div class="frame-head"><span class="frame-no mono">Frame 05</span><span class="chip s-prog">In progress · freelance</span></div>
+          <h3>LEGO Robotics Curriculum</h3>
+          <p class="meta">Robotics education company, Germany · primary learners</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Robotics sessions that feel like play but don't connect to school learning.</dd></div>
+            <div><dt>Design moves</dt><dd>Tie each build to a science or physics concept · lesson plans and slides teachers can run as-is.</dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="prog">
+          <div class="frame-head"><span class="frame-no mono">Frame 06</span><span class="chip s-prog">In progress</span></div>
+          <h3>Finnish Listen & Repeat</h3>
+          <p class="meta">Video-based language learning · adult English-speaking beginners</p>
+          <dl>
+            <div><dt>Design moves</dt><dd>Hear Finnish first, then English, then repeat and recall — built for memory, not just exposure.</dd></div>
+            <div><dt>LXD skills</dt><dd>Adult learners · video learning · automated content pipeline.</dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="plan">
+          <div class="frame-head"><span class="frame-no mono">Frame 07</span><span class="chip s-plan">Planned</span></div>
+          <h3>Roblox Game-Making Course</h3>
+          <p class="meta">Self-paced course · tweens and teens</p>
+          <dl>
+            <div><dt>Idea</dt><dd>Teach game design inside the platform learners already love, with real screenshots and the expected output at every step.</dd></div>
+          </dl>
+        </article>
+
+        <article class="frame" data-s="plan">
+          <div class="frame-head"><span class="frame-no mono">Frame 08</span><span class="chip s-plan">Planned</span></div>
+          <h3>Debugging Basics e-Learning</h3>
+          <p class="meta">Articulate Rise / Storyline · adult learners</p>
+          <dl>
+            <div><dt>Idea</dt><dd>A 15-minute interactive module with scenario questions and feedback, exported as SCORM and evaluated with Kirkpatrick's levels.</dd></div>
+          </dl>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ MODULE 4: LESSON ANATOMY ============ -->
+    <section id="lesson" class="module" data-mod="lesson">
+      <p class="mono eyebrow">Module 4</p>
+      <h2>Anatomy of a 60-minute lesson</h2>
+      <p class="body-text">Every lesson I design follows the same rhythm, so learners always know what's coming. Tap a block to see why it's there.</p>
+
+      <div class="bar-wrap">
+        <div class="bar" role="tablist" aria-label="Lesson segments">
+          <button role="tab" id="seg-1" class="seg c-rec" style="flex:5" data-seg="0" aria-selected="true">Recall<small>5</small></button>
+          <button role="tab" id="seg-2" class="seg c-teach" style="flex:10" data-seg="1" aria-selected="false">Concept<small>10</small></button>
+          <button role="tab" id="seg-3" class="seg c-teach" style="flex:10" data-seg="2" aria-selected="false">Demo<small>10</small></button>
+          <button role="tab" id="seg-4" class="seg c-do" style="flex:10" data-seg="3" aria-selected="false">Challenge 1<small>10</small></button>
+          <button role="tab" id="seg-5" class="seg c-do" style="flex:10" data-seg="4" aria-selected="false">Challenge 2<small>10</small></button>
+          <button role="tab" id="seg-6" class="seg c-rec" style="flex:5" data-seg="5" aria-selected="false">Test<small>5</small></button>
+          <button role="tab" id="seg-7" class="seg c-rec" style="flex:5" data-seg="6" aria-selected="false">Home<small>5</small></button>
+          <button role="tab" id="seg-8" class="seg c-rec" style="flex:5" data-seg="7" aria-selected="false">Reflect<small>5</small></button>
+        </div>
+        <div class="scale mono"><span>0</span><span>15</span><span>30</span><span>45</span><span>60 min</span></div>
+      </div>
+      <div class="seg-panel" aria-live="polite">
+        <p class="mono" id="seg-title">Recall · minutes 0–5</p>
+        <p id="seg-why">Retrieval practice. Pulling last week's idea back from memory makes it stick far better than re-reading it.</p>
+      </div>
+      <div class="legend"><span><i class="c-rec"></i>Remember & check</span><span><i class="c-teach"></i>Teach</span><span><i class="c-do"></i>Learner builds</span></div>
+    </section>
+
+    <!-- ============ MODULE 5: SKILLS ============ -->
+    <section id="skills" class="module" data-mod="skills">
+      <p class="mono eyebrow">Module 5</p>
+      <h2>Skills map</h2>
+      <p class="body-text">Where I am today, and what I'm adding. Good designers show their gaps; they're my learning plan.</p>
+      <div class="skills">
+        <div class="col have"><span class="chip s-done">Strong</span><h3>What I bring</h3><ul>
+          <li>Curriculum development</li><li>Lesson planning & sequencing</li><li>Project-based learning</li><li>Assessment design</li><li>Live online facilitation</li><li>H5P · Genially · Moodle · Google Classroom</li><li>Python · Scratch · Arduino · App Inventor</li></ul></div>
+        <div class="col grow"><span class="chip s-prog">Growing</span><h3>Building now</h3><ul>
+          <li>LXD fundamentals (University of Michigan)</li><li>Accessibility & inclusive design</li><li>User research & usability testing</li><li>Writing design case studies</li><li>Git, GitHub & web publishing</li></ul></div>
+        <div class="col learn"><span class="chip s-plan">Next</span><h3>To learn</h3><ul>
+          <li>Articulate Storyline & Rise 360</li><li>Figma storyboards & prototypes</li><li>SAM & backward design in depth</li><li>Kirkpatrick evaluation</li><li>SCORM / xAPI</li><li>Camtasia or Vyond video</li><li>Adult & corporate learning</li></ul></div>
+      </div>
+      <div class="course-progress">
+        <p class="mono">Learning Experience Design · University of Michigan · Coursera</p>
+        <div class="track"><div class="fill" style="width:41%"></div></div>
+        <p class="meta">41% complete</p>
+      </div>
+    </section>
+
+    <!-- ============ MODULE 6: KNOWLEDGE CHECK ============ -->
+    <section id="check" class="module" data-mod="check">
+      <p class="mono eyebrow">Module 6</p>
+      <h2>Knowledge check</h2>
+      <p class="body-text">Three quick questions. Get them right to unlock your certificate.</p>
+
+      <form id="quiz" class="quiz" novalidate>
+        <fieldset>
+          <legend>1. What does Tejaswini put at the start of every lesson?</legend>
+          <label><input type="radio" name="q1" value="a" id="q1a"> A long theory lecture</label>
+          <label><input type="radio" name="q1" value="b" id="q1b"> A 5-minute recall activity</label>
+          <label><input type="radio" name="q1" value="c" id="q1c"> A graded exam</label>
+          <p class="fb" data-for="q1"></p>
+        </fieldset>
+        <fieldset>
+          <legend>2. Her MSc thesis makes Scratch usable with…</legend>
+          <label><input type="radio" name="q2" value="a" id="q2a"> Eye gaze and voice</label>
+          <label><input type="radio" name="q2" value="b" id="q2b"> A bigger mouse</label>
+          <label><input type="radio" name="q2" value="c" id="q2c"> Keyboard shortcuts only</label>
+          <p class="fb" data-for="q2"></p>
+        </fieldset>
+        <fieldset>
+          <legend>3. How does she handle a class with mixed ability?</legend>
+          <label><input type="radio" name="q3" value="a" id="q3a"> Teaches to the middle</label>
+          <label><input type="radio" name="q3" value="b" id="q3b"> Splits it into two classes</label>
+          <label><input type="radio" name="q3" value="c" id="q3c"> Builds tiered challenges into the lesson</label>
+          <p class="fb" data-for="q3"></p>
+        </fieldset>
+        <label class="name-field" for="learner-name">Your name, for the certificate (optional)
+          <input type="text" id="learner-name" placeholder="e.g. Anna from Acme Learning" maxlength="40">
+        </label>
+        <button type="submit" class="btn">Check my answers</button>
+        <p class="quiz-result" id="quiz-result" aria-live="polite"></p>
+      </form>
+
+      <div class="cert" id="cert" hidden>
+        <p class="mono">Certificate of completion</p>
+        <p class="cert-line">This certifies that</p>
+        <p class="cert-name" id="cert-name">A thoughtful recruiter</p>
+        <p class="cert-line">has completed <strong>Meet Tejaswini: a Learning Experience Designer</strong> and can now describe how she designs, evaluate her work, and decide to get in touch.</p>
+        <div class="cert-foot">
+          <span class="seal">✓</span>
+          <div><p class="mono">Next step</p><p>Let's talk: <a href="mailto:Tejaswini210601@gmail.com">Tejaswini210601@gmail.com</a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="contact">
+      <h2>Course complete? Let's talk.</h2>
+      <div class="contact-row">
+        <a href="mailto:Tejaswini210601@gmail.com">Tejaswini210601@gmail.com</a>
+        <a href="https://www.linkedin.com/in/tejaswini-stemteacher/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/tejaswini210601-byte" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://tejaswini210601-byte.github.io/Portfolio/" target="_blank" rel="noopener">Teaching portfolio ↗</a>
+      </div>
+      <p class="meta">Joensuu, Finland · MSc Information Technology, University of Eastern Finland · Designed and built by me, as a course.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
