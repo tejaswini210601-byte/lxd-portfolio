@@ -10,7 +10,8 @@ My Learning Experience Designer portfolio, built **as a short course**. Visitors
 |---|---|
 | `index.html` | The content: every module, case study and quiz question |
 | `style.css` | The look: colours, fonts, layout, dark mode, mobile layout |
-| `script.js` | The interactions: progress bar, flip cards, process steps, filters, lesson bar, quiz |
+| `script.js` | The interactions: cursor-following portrait, progress bar, flip cards, process steps, filters, lesson bar, quiz + confetti |
+| `assets/` | My portrait frames (64 directions + centre), fonts (Fredoka, Nunito, Dancing Script), tool logos |
 
 ## The modules
 
